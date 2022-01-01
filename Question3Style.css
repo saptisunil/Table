@@ -2,14 +2,19 @@ table {
   border-collapse: separate;
   border-spacing: 0;
 }
-td, th {
+th {
   margin: 0;
   border-bottom:1px solid gray;
   white-space: nowrap;
   padding: 10px;
-}
-th{
   font-size: 18px;
+}
+td {
+  margin: 0;
+  border-bottom:1px solid gray;
+  width: 100%;
+  max-width: 60px;
+  padding: 10px;
 }
 div {
   display: flex;
@@ -19,7 +24,7 @@ div {
   overflow-y: scroll;
   border: 1px solid gray;
 } 
-td:first-child, th:first-child{
+td:first-child, th:first-child {
   position: sticky;
   left: 0;
   font-weight: bold;
